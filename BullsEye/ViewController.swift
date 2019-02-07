@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        startNewRound()
+        startNewGame()
     }
     
     @IBAction func showAlert() {
@@ -87,6 +87,16 @@ class ViewController: UIViewController {
     
     func calculateDifference() -> Int {
         return abs(currentValue - targetValue)
+    }
+    
+    func startNewGame() {
+        round = 0
+        score = 0
+        startNewRound()
+    }
+    
+    @IBAction func startOver() {
+        startNewGame()
     }
 }
 
