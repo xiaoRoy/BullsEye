@@ -32,18 +32,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAlert() {
-        let currentScore = calculateScore()
-        score += currentScore
+        let difference = calculateDifference()
+        var currentScore = (100 - difference)
         let title: String
-        if currentScore == 100 {
+        if difference == 0 {
             title = "Perfect!"
-        } else if currentScore >= 95 {
+            currentScore += 100
+        } else if difference < 5 {
             title = "You almost had it!"
-        } else if currentScore >= 90 {
+            if difference == 1 {
+                currentScore += 50
+            }
+        } else if difference < 10 {
             title = "Pretty Good!"
         } else {
             title = "Not even close..."
         }
+        score += currentScore
         
         let message = "You scored \(currentScore)"
         let alert = UIAlertController(
@@ -51,12 +56,11 @@ class ViewController: UIViewController {
             preferredStyle: .alert)
         
         let action = UIAlertAction(
-            title: "OK", style: .default, handler: nil)
+            title: "OK", style: .default, handler: { _ in self.startNewRound()})
         
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
-        startNewRound()
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
@@ -81,8 +85,8 @@ class ViewController: UIViewController {
         roundLabel.text = "\(round)"
     }
     
-    func calculateScore() -> Int {
-        return 100 - abs(currentValue - targetValue)
+    func calculateDifference() -> Int {
+        return abs(currentValue - targetValue)
     }
 }
 
