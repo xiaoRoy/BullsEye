@@ -7,16 +7,25 @@
 //
 
 import UIKit
+import WebKit
 
 class AboutViewController: UIViewController {
+    
+    @IBOutlet var webView: WKWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initWebView()
         // Do any additional setup after loading the view.
     }
     
-
+    func initWebView() {
+        if let url = Bundle.main.url(forResource: "BullsEye", withExtension: "html") {
+            let request = URLRequest(url: url)
+            webView.load(request)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -13,6 +13,7 @@
 		C45CCA072205A2B5009EE489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45CCA062205A2B5009EE489 /* Assets.xcassets */; };
 		C45CCA0A2205A2B5009EE489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45CCA082205A2B5009EE489 /* LaunchScreen.storyboard */; };
 		C47DA7D4220C7B450067D004 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DA7D3220C7B450067D004 /* AboutViewController.swift */; };
+		C47DA7D6220DD71F0067D004 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = C47DA7D5220DD71F0067D004 /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C45CCA092205A2B5009EE489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C45CCA0B2205A2B5009EE489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C47DA7D3220C7B450067D004 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		C47DA7D5220DD71F0067D004 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		C45CC9FE2205A2B4009EE489 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				C47DA7D5220DD71F0067D004 /* BullsEye.html */,
 				C45CC9FF2205A2B4009EE489 /* AppDelegate.swift */,
 				C45CCA012205A2B4009EE489 /* ViewController.swift */,
 				C47DA7D3220C7B450067D004 /* AboutViewController.swift */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45CCA0A2205A2B5009EE489 /* LaunchScreen.storyboard in Resources */,
+				C47DA7D6220DD71F0067D004 /* BullsEye.html in Resources */,
 				C45CCA072205A2B5009EE489 /* Assets.xcassets in Resources */,
 				C45CCA052205A2B4009EE489 /* Main.storyboard in Resources */,
 			);
