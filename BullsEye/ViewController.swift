@@ -98,6 +98,13 @@ class ViewController: UIViewController {
     
     @IBAction func startOver() {
         startNewGame()
+        
+        let transition = CATransition()
+        transition.type = CATransitionType.fade
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(
+            name:CAMediaTimingFunctionName.easeOut)
+        view.layer.add(transition, forKey: nil)
     }
     
     func setupSlider() {
