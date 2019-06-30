@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -49,14 +49,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="WyR-HZ-S9x" firstAttribute="leading" secondItem="zg9-FQ-tiE" secondAttribute="leading" constant="20" id="2Wr-Bb-k9S"/>
-                            <constraint firstItem="zg9-FQ-tiE" firstAttribute="trailing" secondItem="MWV-CA-s5M" secondAttribute="trailing" id="5jK-04-roF"/>
-                            <constraint firstItem="zg9-FQ-tiE" firstAttribute="bottom" secondItem="MWV-CA-s5M" secondAttribute="bottom" id="6OS-1z-yVp"/>
+                            <constraint firstAttribute="trailing" secondItem="MWV-CA-s5M" secondAttribute="trailing" id="5jK-04-roF"/>
+                            <constraint firstAttribute="bottom" secondItem="MWV-CA-s5M" secondAttribute="bottom" id="6OS-1z-yVp"/>
                             <constraint firstItem="zg9-FQ-tiE" firstAttribute="trailing" secondItem="WyR-HZ-S9x" secondAttribute="trailing" constant="20" id="DNI-ZZ-0u9"/>
-                            <constraint firstItem="MWV-CA-s5M" firstAttribute="leading" secondItem="zg9-FQ-tiE" secondAttribute="leading" id="U1d-wP-vO0"/>
+                            <constraint firstItem="MWV-CA-s5M" firstAttribute="leading" secondItem="ZWU-Y3-8nu" secondAttribute="leading" id="U1d-wP-vO0"/>
                             <constraint firstItem="M8l-ff-p1R" firstAttribute="top" secondItem="WyR-HZ-S9x" secondAttribute="bottom" constant="8" id="UaM-Do-kvT"/>
-                            <constraint firstItem="MWV-CA-s5M" firstAttribute="top" secondItem="zg9-FQ-tiE" secondAttribute="top" id="cuH-de-0Fb"/>
-                            <constraint firstItem="M8l-ff-p1R" firstAttribute="centerX" secondItem="ZWU-Y3-8nu" secondAttribute="centerX" id="dOC-gM-MP1"/>
+                            <constraint firstItem="MWV-CA-s5M" firstAttribute="top" secondItem="ZWU-Y3-8nu" secondAttribute="top" id="cuH-de-0Fb"/>
                             <constraint firstItem="WyR-HZ-S9x" firstAttribute="top" secondItem="zg9-FQ-tiE" secondAttribute="top" constant="20" id="fCl-hu-zZQ"/>
+                            <constraint firstItem="M8l-ff-p1R" firstAttribute="centerX" secondItem="ZWU-Y3-8nu" secondAttribute="centerX" id="kiO-Od-c4h"/>
                             <constraint firstItem="zg9-FQ-tiE" firstAttribute="bottom" secondItem="M8l-ff-p1R" secondAttribute="bottom" constant="20" id="zib-PP-CgJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zg9-FQ-tiE"/>
@@ -90,7 +90,7 @@
                                 <rect key="frame" x="554" y="279" width="32" height="32"/>
                                 <state key="normal" image="InfoButton" backgroundImage="SmallButton"/>
                                 <connections>
-                                    <segue destination="LOP-91-zfH" kind="presentation" modalTransitionStyle="flipHorizontal" id="8LR-Dr-wK4"/>
+                                    <segue destination="LOP-91-zfH" kind="presentation" id="CbS-Gw-gJG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ON9-zp-YRS">
